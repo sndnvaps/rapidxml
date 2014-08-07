@@ -2,8 +2,9 @@
 #define RAPIDXML_ITERATORS_HPP_INCLUDED
 
 // Copyright (C) 2006, 2009 Marcin Kalicinski
-// Version 1.13
-// Revision $DateTime: 2009/05/13 01:46:17 $
+// Copyright (C) 2014, 2014 sndnvaps<sndnvaps@yahoo.com>
+// Version 1.20
+// Revision $DateTime: 2014/08/08 04:22:17 $
 //! \file rapidxml_iterators.hpp This file contains rapidxml iterators
 
 #include "rapidxml.hpp"
@@ -18,9 +19,12 @@ namespace rapidxml
     
     public:
 
-        typedef typename xml_node<Ch> value_type;
-        typedef typename xml_node<Ch> &reference;
-        typedef typename xml_node<Ch> *pointer;
+        //typedef typename xml_node<Ch> value_type;
+        //typedef typename xml_node<Ch> &reference;
+        //typedef typename xml_node<Ch> *pointer;
+        typedef xml_node<Ch> value_type;
+        typedef xml_node<Ch> &reference;
+        typedef xml_node<Ch> *pointer;
         typedef std::ptrdiff_t difference_type;
         typedef std::bidirectional_iterator_tag iterator_category;
         
@@ -97,9 +101,12 @@ namespace rapidxml
     
     public:
 
-        typedef typename xml_attribute<Ch> value_type;
-        typedef typename xml_attribute<Ch> &reference;
-        typedef typename xml_attribute<Ch> *pointer;
+        //typedef typename xml_attribute<Ch> value_type;
+        //typedef typename xml_attribute<Ch> &reference;
+        //typedef typename xml_attribute<Ch> *pointer;
+        typedef xml_attribute<Ch> value_type;
+        typedef xml_attribute<Ch> &reference;
+        typedef xml_attribute<Ch> *pointer;
         typedef std::ptrdiff_t difference_type;
         typedef std::bidirectional_iterator_tag iterator_category;
         
